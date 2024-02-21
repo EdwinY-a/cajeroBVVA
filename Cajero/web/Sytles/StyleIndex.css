@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Poppins:wght@300;400&family=Quicksand:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: white;
+}
+
+header {
+    background-color: #072146;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+header .logo{
+    cursor: pointer;
+}
+
+header .logo img{
+height: 70px;
+width: auto;
+transition: all 0.3s;
+}
+
+header .logo img:hover{
+transform: scale(1.2);
+}
+
+header .nav-links{
+    list-style: none;
+
+}
+
+header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+header .nav-links a{
+    font-size: 700;
+    color: #cccccc;
+    text-decoration: none;
+}
+
+header .nav-links li a:hover{
+    color: white;
+}
+
+/*CONTENEDOR*/
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/*Lista Desplegable*/
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    display: block;
+}
+
+select {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+select:hover {
+    border-color: #555;
+}
+
+select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+option {
+    font-size: 1em;
+}  
+/*Button*/
+
+button{
+    align-items: center;
+}

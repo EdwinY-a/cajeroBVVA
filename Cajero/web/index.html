@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Sytles/StyleIndex.css">
+        <link rel="stylesheet" type="text/css" href="Sytles/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo"><a href="index.html">
+                    <img src="resources/logo-principal-bbva.png" alt=""></a>
+            </div>
+            <nav>
+
+            </nav>
+        </header>
+        <div id="contenedor_principal" class="container">
+
+            <div class="form-group form-floating">
+                <select id="txtBanco" name="txtBanco" class="form-control">
+                    <option value="BBVA">BBVA</option>
+                    <option value="BancoDiana">BancoDiana</option>
+                </select>
+                <label for="opciones">Selecciona una opción:</label>
+            </div>
+            <div class="form-group form-floating">
+                <input type="number" class="form-control" max="16" id="txtNoTarjeta" name="txtNoTarjeta">
+                <label for="txtNoTarjeta">No. Tarjeta:</label>
+            </div>
+            <div class="form-group form-floating">
+                <input type="password" class="form-control" max="4" id="txtNIP" name="txtNIP">
+                <label for="txtNIP">NIP:</label>
+            </div>
+            <div class="form-group form-floating">
+                <input type="number" class="form-control" id="txtMonto" name="txtMonto">
+                <label for="txtMonto">Monto:</label>
+            </div>
+            <div class="form-group  col text-center">
+                <button class="mt-2 mx-1 mx-auto btn btn-success btn-lg" onclick="retirar()" id="btnAdd"><i class="fa-solid fa-floppy-disk mx-1"></i>Retirar</button>
+            </div>
+
+        </div>
+        
+        <label id="respuesta" style="justify-content: center;"></label>
+
+        <script src="core_cajero.js"></script>
+        <script src="Styles/js/bootstrap.bundle.min.js"></script>
+        <script src="js/gft/gft.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </body>
+
+</html>
